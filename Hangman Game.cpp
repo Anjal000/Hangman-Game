@@ -37,13 +37,51 @@ int main()
     srand(time(NULL));
     keynum=rand()%15;
     key=keys[keynum];
-    if(keynum>6)
-    {
-        hint="datatype of cpp";
-    }
-    else
-    {
-        hint="keyword of cpp";
+    switch(keynum){
+        case 0:
+        hint="function that expands in line when called";
+        break;
+        case 1:
+        hint="takes loop to the starting point";
+        break;
+        case 2:
+        hint="destroy array and objects";
+        break;
+        case 3:
+        hint="terminates the loop";
+        break;
+        case 4:
+        hint="prevents variables from changing";
+        break;
+        case 5:
+        hint="shows space taken by a object in memory";
+        break;
+        case 6:
+        hint="allocates space for lifetime of program";
+        break;
+        case 7:
+        hint="have a crucial role in OOP";
+        break;
+        case 8:
+        hint="stores variables of different data type";
+        break;
+        case 9:
+        hint="provides memory to only one of its variables";
+        break;
+        case 10:
+        hint="symbolises character with numbers";
+        break;
+        case 11:
+        hint="stores whole number";
+        break;
+        case 12:
+        hint="takes 1 byte memory ";
+        break;
+        case 13:
+        hint="true/false";
+        break;
+        case 14:
+        hint="stores multiple values of single data type";
     }
     
     string hidden(key.length(),'X');
